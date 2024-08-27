@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 94%);
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    margin: 10% auto 10% auto;
+    max-width: 370px;
+    background-color: white;
+    display: grid;
+    grid-gap: 0.5rem;
+    padding: 35px;
+    border-radius: 15px 15px 100px 15px;
+}
+
+@media all and (max-width: 500px) {
+    .container {
+        margin: 20% auto;
+        max-width: 260px;
+        grid-gap: 2rem;
+        padding: 20px;
+    }
+}
+
+.header {
+    margin-top: 5%;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+
+}
+
+form {
+    display: flex;
+    gap: 15px;
+}
+
+@media all and (max-width: 500px) {
+    form {
+        margin-top: 20px;
+    }
+}
+
+.form-child {
+    display: grid;
+    grid-gap: 10px;
+}
+
+label {
+    color: hsl(0, 1%, 44%);
+    font-weight: 600;
+    font-size: 10px;
+}
+
+input {
+    font-family: inherit;
+    font-weight: 900;
+    padding: 10px;
+    width: 4rem;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 5px;
+}
+
+@media all and (max-width: 500px) {
+    input {
+        width: 3rem;
+    }
+}
+
+.error101 {
+    color: red;
+    font-size: 8px;
+    position: absolute;
+    margin-top: 4.5rem;
+}
+
+input:hover {
+    border: 1px solid hsl(259, 100%, 65%);
+     cursor: pointer;
+}
+
+.btn-container {
+    align-items: center;
+    display: flex;
+   /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center; */
+}
+
+@media all and (max-width: 500px) {
+    .btn-container {
+        display: grid;
+    }
+}
+
+hr {
+    border: 1px solid hsl(0, 0%, 86%);
+    grid-area: hr;
+    width: 320px;
+}
+
+@media all and (max-width: 500px) {
+    hr {
+        width: 250px;
+    }
+}
+
+button {
+    border: none;
+    grid-area: button;
+    border-radius: 100vw;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: hsl(259, 100%, 65%);
+}
+
+@media all and (max-width: 500px) {
+    button {
+        position: relative;
+        margin-inline: 40%;
+    }
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    border-radius: inherit;
+}
+
+
+button:hover, .icon:hover {
+    background-color: hsl(0, 0%, 8%);
+}
+
+.age-output {
+    margin-top: 0;
+}
+
+@media all and (max-width: 500px) {
+    .age-output {
+        margin-bottom: 20px;
+    }
+}
+
+.age-output > h1 {
+    font-weight: 900;
+    font-style: italic;
+    font-size: 45px;
+    line-height: 48px;
+}
+
+span {
+    color: hsl(259, 100%, 65%);
+}
+
+.attribution {
+    text-align: center;
+    margin: 0;
+}

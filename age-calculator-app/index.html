@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+  <div class="header">
+    <h1>AGE CALCULATOR APPLICATION</h1>
+  </div>
+  <div class="container">
+    <div class="date-input">
+      <form action="">
+        <div class="form-child">
+          <label class="label" for="day" name="day">DAY</label>
+          <input class="input" type="number" placeholder="DD" id="dayInput" min="1" max="31">
+          <span id="dayError" class="error101"></span>
+        </div>
+        <div class="form-child">
+          <label class="label" for="month" name="month">MONTH</label>
+          <input class="input" type="number" placeholder="MM" id="monthInput" min="1" max="12">
+          <span id="monthError" class="error101"></span>
+        </div>
+        <div class="form-child">
+          <label class="label" for="year" name="year">YEAR</label>
+          <input class="input" type="number" placeholder="YYYY" id="yearInput">
+          <span id="yearError" class="error101"></span>
+        </div>
+      </form>
+    </div>
+
+    <div class="btn-container">
+      <hr>
+      <button id="btn">
+        <svg class="icon">
+          <use xlink:href="assets/images/icon-arrow.svg#icon-arrow"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="age-output">
+      <h1 class="year-output"><span id="yearOutput">- -</span> years</h1>
+      <h1 class="month-output"><span id="monthOutput">- -</span> months</h1>
+      <h1 class="day-output"><span id="dayOutput">- -</span> days</h1>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Enyotronics</a>.
+  </div>
+  <script src="script1.js"></script>
+</body>
+</html>
